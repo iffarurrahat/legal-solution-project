@@ -71,7 +71,19 @@
         </ul>
       </div>
       <div class="navbar-end">
-        <a class="font-poppins bg-bronze text-white py-2 px-2 sm:py-4 sm:px-7 rounded-lg cursor-pointer">Free Consultation</a>
+        <!-- The button to open modal -->
+        <label for="my-modal" class="font-poppins bg-bronze text-white py-2 px-2 sm:py-4 sm:px-7 rounded-lg cursor-pointer">Free Consultation</label>
+
+        <!-- Put this part before tag -->
+        <input type="checkbox" id="my-modal" class="modal-toggle" />
+        <div class="modal">
+          <div class="modal-box">
+            <h3 class="font-bold text-lg">Congratulations random Internet user!</h3>
+            <p class="py-4">You've been selected for a chance to get one year of subscription to use Wikipedia for free!</p>
+            <div class="modal-action">
+              <label for="my-modal" class="font-poppins bg-bronze text-white py-2 px-2 sm:py-4 sm:px-7 rounded-lg cursor-pointer">Okey</label>
+            </div>
+          </div>
       </div>
     </div>
   </nav>
@@ -100,38 +112,38 @@
       <h2 class="font-ebGaramond font-extrabold text-4xl mb-6 text-center">The Legal Practice Area</h2>
       <p class="font-poppins text-gray text-center">There are many variations of passages of Lorem Ipsum available, but the majority have <br> suffered alteration in some form, by injected humour.</p>
       <div class="mt-16 grid md:grid-cols-2 lg:grid-cols-3">
-        <div class="text-center p-16 lg:border-b">
+        <div class="text-center p-16 lg:border-b hover:bg-gradient-to-b from-[#F3F3F3] transition-all">
             <img src="images/business.png" alt="legal practice area business logo" class="mx-auto mb-8">
             <h2 class="text-3xl font-ebGaramond font-extrabold mb-6 ">Business Law</h2>
             <p class="text-gray font-poppins mb-9">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
             <img src="images/frame.png" alt="business arae frame icon" class="mx-auto">
         </div>
-        <div class="text-center p-16 bg-gradient-to-b from-[#F3F3F3] lg:border-x lg:border-b">
+        <div class="text-center p-16 lg:border-x lg:border-b bg-gradient-to-b from-[#F3F3F3] hover:bg-gradient-to-b hover:from-transparent transition-all">
             <img src="images/criminal.png" alt="legal practice area criminal logo" class="mx-auto mb-8">
             <h2 class="text-3xl font-ebGaramond font-extrabold mb-6 ">Criminal Law</h2>
             <p class="text-gray font-poppins mb-9">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
             <img src="images/frame.png" alt="criminal arae frame icon" class="mx-auto">
         </div>
-        <div class="text-center p-16 lg:border-b">
+        <div class="text-center p-16 lg:border-b hover:bg-gradient-to-b from-[#F3F3F3] transition-all">
             <img src="images/child.png" alt="legal practice area Child Support logo" class="mx-auto mb-8">
             <h2 class="text-3xl font-ebGaramond font-extrabold mb-6 ">Child Support</h2>
             <p class="text-gray font-poppins mb-9">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
             <img src="images/frame.png" alt="business arae frame icon" class="mx-auto">
         </div>
 
-        <div class="text-center p-16">
+        <div class="text-center p-16 hover:bg-gradient-to-b from-[#F3F3F3] transition-all">
             <img src="images/education.png" alt="legal practice area education logo" class="mx-auto mb-8">
             <h2 class="text-3xl font-ebGaramond font-extrabold mb-6 ">Education Law</h2>
             <p class="text-gray font-poppins mb-9">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
             <img src="images/frame.png" alt="education arae frame icon" class="mx-auto">
         </div>
-        <div class="text-center p-16 lg:border-x">
+        <div class="text-center p-16 lg:border-x hover:bg-gradient-to-b from-[#F3F3F3] transition-all">
             <img src="images/divorce.png" alt="legal practice area divorce logo" class="mx-auto mb-8">
             <h2 class="text-3xl font-ebGaramond font-extrabold mb-6 ">Divorce Law</h2>
             <p class="text-gray font-poppins mb-9">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
             <img src="images/frame.png" alt="divorce arae frame icon" class="mx-auto">
         </div>
-        <div class="text-center p-16">
+        <div class="text-center p-16 hover:bg-gradient-to-b from-[#F3F3F3] transition-all">
             <img src="images/tax.png" alt="legal practice area Child tax logo" class="mx-auto mb-8">
             <h2 class="text-3xl font-ebGaramond font-extrabold mb-6 ">Tax Law</h2>
             <p class="text-gray font-poppins mb-9">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
@@ -156,34 +168,36 @@
         <div class="order-2 md:order-1">
           <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-silver rounded-box mb-7">
             <div class="collapse-title font-ebGaramond font-extrabold text-2xl">
-              1. Are application fee waivers available?
+              1. What is the difference between grid and flex?
             </div>
             <div class="collapse-content"> 
-              <p class="text-gray font-poppins">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+              <p class="text-gray font-poppins">
+                <strong>Grid</strong> - being tow dimensional means it can work on both row and column side and also can do any kind of more complex work. <strong>Flex</strong> - is one dimensional means can work on either side of row or column
+              </p>
             </div>
           </div>
           <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-silver rounded-box mb-7">
             <div class="collapse-title font-ebGaramond font-extrabold text-2xl">
-              2. Are application fee waivers available?
+              2. What is the purpose of media query?
             </div>
             <div class="collapse-content"> 
-              <p class="text-gray font-poppins">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+              <p class="text-gray font-poppins">Media queries are a key part of responsive web design, as they <strong>allow you to create different layouts depending on the size of the viewport, but they can also be used to detect other things about the environment your site is running on,</strong> for example whether the user is using a touchscreen rather than a mouse.</p>
             </div>
           </div>
           <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-silver rounded-box mb-7">
             <div class="collapse-title font-ebGaramond font-extrabold text-2xl">
-              3. Are application fee waivers available?
+              3. What is CSS Box Model, and does a work ?
             </div>
             <div class="collapse-content"> 
-              <p class="text-gray font-poppins">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+              <p class="text-gray font-poppins">A box in CSS consists of a content area, which is where any text, images, or other HTML elements are displayed. This is optionally surrounded by padding, a border, and a margin, on one or more sides. The box model <strong>describes how these elements work together to create a box as displayed by CSS.</strong></p>
             </div>
           </div>
           <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-silver rounded-box">
             <div class="collapse-title font-ebGaramond font-extrabold text-2xl">
-              4. Are application fee waivers available?
+              4. What is semantic tag and how does a work ? 
             </div>
             <div class="collapse-content"> 
-              <p class="text-gray font-poppins">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+              <p class="text-gray font-poppins">The semantic HTML tags <strong>help the search engines and other user devices to determine the importance and context of web pages.</strong> The pages made with semantic elements are much easier to read. It has greater accessibility. It offers a better user experience</p>
             </div>
           </div>
         </div>
@@ -199,8 +213,8 @@
       <h2 class="font-ebGaramond font-extrabold text-4xl mb-6 text-center">Contact With Us</h2>
       <p class="font-poppins text-gray text-center">There are many variations of passages of Lorem Ipsum available, but the majority have <br> suffered alteration in some form, by injected humour.</p>
       <div class="grid lg:grid-cols-2 gap-7 mt-16">
-        <div class="grid grid-cols-2">
-           <div class="bg-silver border-b border-r border-lightSilver text-center py-16 px-14">
+        <div class="grid sm:grid-cols-1 lg:grid-cols-2">
+           <div class="bg-silver border-b lg:border-r border-lightSilver text-center py-16 px-14">
             <img src="images/location.png" alt="" class="mx-auto mb-4">
             <h5 class="font-ebGaramond font-extrabold text-2xl mb-4">Address</h5>
             <p class="font-poppins text-gray">A108 Adam Street, <br>New York, NY 535022</p>
@@ -210,12 +224,12 @@
             <h5 class="font-ebGaramond font-extrabold text-2xl mb-4">Call Us</h5>
             <p class="font-poppins text-gray">+88 01750 00 00 00 <br>+88 01750 00 00 00</p>
            </div>
-           <div class="bg-silver text-center py-16 px-14">
+           <div class="bg-silver sm:border-t md:border-0 border-lightSilver text-center py-16 px-14">
             <img src="images/email.png" alt="" class="mx-auto mb-4">
             <h5 class="font-ebGaramond font-extrabold text-2xl mb-4">Email Us</h5>
             <p class="font-poppins text-gray">info@gmail.com <br>info@gmail.com</p>
            </div>
-           <div class="bg-silver border-l border-t border-lightSilver text-center py-16 px-14">
+           <div class="bg-silver lg:border-l border-t border-lightSilver text-center py-16 px-14">
             <img src="images/time.png" alt="" class="mx-auto mb-4">
             <h5 class="font-ebGaramond font-extrabold text-2xl mb-4">Working Hours</h5>
             <p class="font-poppins text-gray">Mon-Fri: 9AM to 5PM <br>Sunday: 9AM to 1 PM</p>
@@ -246,7 +260,7 @@
   <!-- Footer Section -->
   <footer class="bg-black">
     <div class="w-full max-w-6xl mx-auto px-5 mt-28">
-      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-20 py-28 items-center">
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-20 py-28">
         <div>
           <img src="images/logo.png" alt="">
           <p class="font-poppins text-lightSilver mt-8">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
